@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>..::Car Service::.</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+ 
+
+      <div class="row">	  
+	     <div class="container">
+		 <nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<a class="navbar-brand" href="#">Car Service</a>
+				</div>
+			
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cadastrarveiculo.html">Cadastrar Veículos</a></li>
+				<li class="active"><a href="cadastrarservico.html">Cadastrar Serviços</a></li>
+				<li><a href="listarveiculo.html">Listar Veículos</a></li>
+				<li><a href="listarservico.html">Listar Serviços</a></li>
+				</ul>
+			</div>
+		 </nav>
+		 
+          <div class="panel panel-primary">
+            <div class="panel-heading">Dados do Serviço</div>
+            <div class="panel-body">
+              <form id="formulario_principal">
+                <div class="form-group">
+                  <label for="title">Descrição do Serviço</label>
+                  <input type="text" name="desc_service" id="desc_service" class="form-control input-lg" placeholder="Descrição do serviço exemplo (Trocar fluído de freio)">
+                </div>
+
+
+				<div class="form-group">
+				<label for="place">Preço do Serviço</label>
+				<input class="form-control input-lg" type="number" id="preco_servico" name="preco_servico" value="0.01">
+				</div>
+
+                <div class="form-group">                  
+					<div class="form-group">
+						<label for="publisher">Tipo de Serviço</label>
+						<select class="form-control input-lg" id="tipo_servico" name="tipo_servico">
+						<option>Manutenção</option>
+						<option>Limpeza</option>
+						<option>Troca</option>
+						<option>Repararo</option>
+						<option>Substituição</option>
+						</select>
+					</div>
+
+                </div>
+
+                <div class="form-group">
+                  <button type="button" id="btnsalvar" onclick="f_create_servico();" class="btn btn-lg btn-primary">
+                    Salvar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/couch.js"></script>
+  
+  </body>
+</html>

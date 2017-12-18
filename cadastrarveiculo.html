@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>..::Car Service::.</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+ 
+
+      <div class="row">	  
+	     <div class="container">
+		 <nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<a class="navbar-brand" href="#">Car Service</a>
+				</div>
+			
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="cadastrarveiculo.html">Cadastrar Veículos</a></li>
+				<li><a href="cadastrarservico.html">Cadastrar Serviços</a></li>
+				<li><a href="listarveiculo.html">Listar Veículos</a></li>
+				<li><a href="listarservico.html">Listar Serviços</a></li>
+				</ul>
+			</div>
+		 </nav>
+		 
+          <div class="panel panel-primary">
+            <div class="panel-heading">Dados do Veículo</div>
+            <div class="panel-body">
+              <form id="formulario_principal">
+                <div class="form-group">
+                  <label for="title">Descrição do Veículo</label>
+                  <input type="text" name="desc_veiculo" id="desc_veiculo" class="form-control input-lg" placeholder="Descrição do veículo exemplo (BMW X6)">
+                </div>
+
+
+				<div class="form-group">
+				<label for="place">Placa</label>
+				<input class="form-control input-lg" type="text" id="placa_veiculo" name="placa_veiculo" value="" placeholder="Placa exemplo (AAK-2992)" maxlength="8">
+				</div>
+
+                <div class="form-group">                  
+					<div class="form-group">
+						<label for="publisher">Cidade</label>
+						<select class="form-control input-lg" id="sel_cidade" name="sel_cidade">
+						<option>Francisco Beltrão</option>
+						<option>Marmeleiro</option>
+						<option>Mariópolis</option>
+						<option>Verê</option>
+						<option>Dois Vizinhos</option>
+						<option>Renascença</option>
+						<option>Pato Branco</option>
+						<option>Guarapuava</option>
+						<option>Curitiba</option>
+						</select>
+					</div>
+
+                </div>
+
+                <div class="form-group">
+                  <label for="publisher">Ano Fabricação</label>
+                  <select class="form-control input-lg" id="ano_fabricacao" name="ano_fabricacao">
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+						<option>2014</option>
+						<option>2013</option>
+						<option>2012</option>
+						<option>2010</option>
+						<option>2011</option>
+						<option>2010</option>
+						<option>2009</option>
+						<option>2008</option>
+						<option>2007</option>
+						<option>2006</option>
+						<option>2005</option>
+						<option>2004</option>
+						<option>2003</option>
+						<option>2002</option>
+						<option>2001</option>
+						<option>2000</option>
+						<option>1999</option>
+						<option>1998</option>
+						<option>1997</option>
+						<option>1996</option>
+						<option>1995</option>
+						<option>1994</option>
+						<option>1993</option>
+						<option>1992</option>
+						<option>1991</option>
+						<option>1990</option>
+						<option>1989</option>						
+						</select>
+						<label for="publisher">Ano Modelo</label>						
+						<select class="form-control input-lg" id="ano_modelo" name="ano_modelo">
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+						<option>2014</option>
+						<option>2013</option>
+						<option>2012</option>
+						<option>2010</option>
+						<option>2011</option>
+						<option>2010</option>
+						<option>2009</option>
+						<option>2008</option>
+						<option>2007</option>
+						<option>2006</option>
+						<option>2005</option>
+						<option>2004</option>
+						<option>2003</option>
+						<option>2002</option>
+						<option>2001</option>
+						<option>2000</option>
+						<option>1999</option>
+						<option>1998</option>
+						<option>1997</option>
+						<option>1996</option>
+						<option>1995</option>
+						<option>1994</option>
+						<option>1993</option>
+						<option>1992</option>
+						<option>1991</option>
+						<option>1990</option>
+						<option>1989</option>						
+						</select>
+                </div>
+                <div class="form-group">
+                  <button type="button" id="btnsalvar" onclick="f_create_veiculo();" class="btn btn-lg btn-primary">
+                    Salvar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/couch.js"></script>
+  
+  </body>
+</html>
